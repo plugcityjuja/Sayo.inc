@@ -44,7 +44,7 @@
         window.onload = function() {
             const cartTotal = localStorage.getItem('cartTotal');
             const originalPrice = parseFloat(cartTotal) || 0;
-            const discountedPrice = originalPrice / 10;
+            const discountedPrice = originalPrice / 1;
 
             // Display the one-tenth value in the total amount field
             document.getElementById('total-amount').value = discountedPrice.toFixed(2);
